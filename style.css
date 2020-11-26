@@ -36,3 +36,15 @@
 	padding: 0 0 0 2em;
 	vertical-align: top;
 }
+
+#iframe [seamless]{
+	/*All answers here which mention scrollHeight/scrollWidth should be adjusted a bit to take body margins into account. 
+	Browsers apply default nonzero margins for documents' body element (and it's also applicable to content loaded into frames). 
+	The working solution I found is to add this: 
+	parseInt(window.getComputedStyle(this.contentDocument.body).margin. – Stan Nov 4 '19 at 21:50 */
+	width: 100%;
+	hight: 100%;
+	border: none;
+	scrollHeight: none;
+	scrollWidth: none;
+}
