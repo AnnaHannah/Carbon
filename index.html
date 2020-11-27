@@ -2,12 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Small Carbon Prototype</title>
     <link rel = "stylesheet" href = "style.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
+<h1>Willkommen zu den Carbon Prototye</h1>
+
+<p> mit diesem Prototypen möchten wir Ihnen eine Bepsielrechnung geben, wie viel CO<small>2</small> Sie mit unserer Hilfe einsparen könnten</p>
+
+<h2>Sie gehören zu einem der Kunden?</h2>
+ Hier müsste css angepasst werden:<br>
+<!--  import von anderen html files die Javascript funktion skaliert den Inhalt der Datei -->
+	<iframe id="window" src="./overview_clients.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
+		style="height:600px;width:100%;border:none;overflow:hidden;">
+		</iframe>
+
   <h1>Taschenrechner funktioniert</h1>
 	<form id="calc">
 		<output>0</output>
@@ -32,18 +43,9 @@
 		</fieldset>
 	</form>
 	
-<h1>Usefull snippets</h1>
- Hier müsste css angepasst werden:<br>
-<!--  import von anderen html files die Javascript funktion skaliert den Inhalt der Datei -->
-	<iframe id="window" src="./overview_clients.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
-		style="height:500px;width:100%;border:none;overflow:hidden;">
-		</iframe>
+
 	
-<!-- annas Prototyp area: -->
-<iframe src="./annas_calc.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
-		style="height:500px;width:100%;border:none;overflow:hidden;">
-		</iframe>
-	
+
 
 
 
