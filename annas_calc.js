@@ -37,6 +37,7 @@ function keyup(e) {
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
 	  var calcuteCO2 = inputNumber * 200;
+	  
 	  $('#searchValue').text("You can save: " + calcuteCO2 + " CO2 Emmisions");
   }
 }
