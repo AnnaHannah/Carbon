@@ -1,3 +1,9 @@
+
+html
+{
+	font-family: 'Roboto', sans-serif;
+}
+
 #calc {
 	background: royalblue;
 	border: 1px solid darkblue;
@@ -38,10 +44,10 @@
 }
 
 #iframe [seamless] window {
-	/*All answers here which mention scrollHeight/scrollWidth should be adjusted a bit to take body margins into account. 
-	Browsers apply default nonzero margins for documents' body element (and it's also applicable to content loaded into frames). 
-	The working solution I found is to add this: 
-	parseInt(window.getComputedStyle(this.contentDocument.body).margin. – Stan Nov 4 '19 at 21:50 */
+	/*All answers here which mention scrollHeight/scrollWidth should be adjusted a bit to take body margins into account.
+	Browsers apply default nonzero margins for documents' body element (and it's also applicable to content loaded into frames).
+	The working solution I found is to add this:
+	parseInt(window.getComputedStyle(this.contentDocument.body).margin. ï¿½ Stan Nov 4 '19 at 21:50 */
 	width: 100%;
 	hight: 500px;
 	border: none;
