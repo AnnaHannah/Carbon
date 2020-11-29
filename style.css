@@ -12,13 +12,11 @@ details	:hover
 details
 {
 	margin-bottom: 1%;
-
-	transition-duration: .2s;
-
 }
 
 
-*:focus {
+*:focus
+{
     outline: 0 !important;
 }
 
