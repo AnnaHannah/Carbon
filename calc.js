@@ -45,10 +45,10 @@ function keyup(e) {
 
 function calculateAndDisplay() {
   //CO2 formula
-	var calcuteCO2 = Math.round(inputNumber * 257,5556);
+	var calculatedCO2 = Math.round(inputNumber * 257,5556);
 	if (Number.isNaN(inputNumber) == true){
 		$('#searchValue').text("Sorry, this number is not valid");
 		}
   else
-	  $('searchValue').innerHTML = calcuteCO2 + " kg of CO2 emissions can be saved by using our biochar!";
+	  $('searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
 }
