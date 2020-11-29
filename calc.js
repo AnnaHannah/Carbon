@@ -35,7 +35,7 @@ defer(function () {
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-	$('searchValue').text(" ");
+	$('#searchValue').text(" ");
 
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
@@ -50,5 +50,6 @@ function calculateAndDisplay() {
 		$('#searchValue').text("Sorry, this number is not valid");
 		}
   else
-	  $('searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
+
+	  $('#searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
 }
