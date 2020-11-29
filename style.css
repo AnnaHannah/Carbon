@@ -4,22 +4,30 @@ html
 	font-family: 'Roboto', sans-serif;
 }
 
-.details:hover
+details	:hover
 {
 	cursor: pointer;
 }
 
-#inputZone
+details
 {
-	display: flex;
-	align-items: center;
-	overflow: hidden;
+	margin-bottom: 1%;
+
+	transition-duration: .2s;
+
 }
 
-#inputZone *
-{
-	margin:1vw 1vw 1vw 1vw;
+
+*:focus {
+    outline: 0 !important;
 }
+
+
+#searchValue
+{
+	margin-top: 10vh;
+}
+
 
 #calc {
 	background: royalblue;
