@@ -33,15 +33,19 @@ defer(function () {
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-  $('#searchValue').text(" ");
+	$('#searchValue').text(" ");
+
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
 	  calculateAndDisplay();
   }
 }
 
-function calculateAndDisplay()
-{
-  var calcuteCO2 = inputNumber * 200;
-  $('#searchValue').text(calcuteCO2 + "kg of CO2 Emmisions can be saved by using our biochar");
+function calculateAndDisplay() {
+	var calcuteCO2 = inputNumber * 200;
+	if (Number.isNaN(inputNumber) == true){
+		$('#searchValue').text("Sie haben leider keine gültige Zahl eingegeben!");
+		}
+  else 
+	  $('#searchValue').text(calcuteCO2 + " kg of CO2 Emmisions can be saved by using our biochar");
 }

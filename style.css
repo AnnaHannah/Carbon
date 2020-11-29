@@ -23,9 +23,15 @@ details
 
 #searchValue
 {
-	margin-top: 10vh;
+	margin: 20px;
 }
 
+#calculus
+{
+	bottom-Margin: 40px;
+	hight: 100px;
+	width: auto;
+}
 
 #calc {
 	background: royalblue;
@@ -66,14 +72,16 @@ details
 	vertical-align: top;
 }
 
+/*
 #iframe [seamless] window {
 	/*All answers here which mention scrollHeight/scrollWidth should be adjusted a bit to take body margins into account.
 	Browsers apply default nonzero margins for documents' body element (and it's also applicable to content loaded into frames).
 	The working solution I found is to add this:
-	parseInt(window.getComputedStyle(this.contentDocument.body).margin. � Stan Nov 4 '19 at 21:50 */
+	parseInt(window.getComputedStyle(this.contentDocument.body).margin. � Stan Nov 4 '19 at 21:50 
 	width: 100%;
 	hight: 500px;
 	border: none;
 	scrolling: no;
 	overflow:hidden;
 }
+*/
