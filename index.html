@@ -13,9 +13,16 @@
 <body>
 <h1>Carbon footprint visualization tool</h1>
 <p>Calculate how much CO<small>2</small> you will save by using our biochar</p>
-<iframe src="./calc.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
-style="height:100%; width:100%; border:none;">
-</iframe>
+		<!-- 
+		Iframe has securtity issues - malware usage
+		<iframe src="./calc.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
+		style="height:100%; width:100%; border:none;">
+		</iframe>
+		-->
+<object data="./calc.html" width="auto" height="auto" type="text/html">
+        <embed src="./calc.html" width="100%" height="10px"> </embed>
+    	Error: Embedded data could not be displayed.
+</object>
 
 <details>
   <summary>Physical properties</summary>
