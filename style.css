@@ -4,6 +4,11 @@ html
 	font-family: 'Roboto', sans-serif;
 }
 
+.details:hover
+{
+	cursor: pointer;
+}
+
 #calc {
 	background: royalblue;
 	border: 1px solid darkblue;
