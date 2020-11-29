@@ -50,6 +50,6 @@ function calculateAndDisplay() {
 		$('#searchValue').text("Sorry, this number is not valid");
 		}
   else
-
-	  $('#searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
+    $('#searchValue').text(calculatedCO2 + " kg of CO2 emissions can be saved by using our biochar!");
+	  //$('#searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
 }
