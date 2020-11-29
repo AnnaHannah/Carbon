@@ -8,6 +8,8 @@ window.onload = function() {
     head.appendChild(script);
   }
 }
+
+
 //debugger time out
 function defer(method) {
   if (window.jQuery) {
@@ -33,7 +35,7 @@ defer(function () {
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-	$('#searchValue').text(" ");
+	$('searchValue').text(" ");
 
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
@@ -48,5 +50,5 @@ function calculateAndDisplay() {
 		$('#searchValue').text("Sorry, this number is not valid");
 		}
   else
-	  $('#searchValue').text(calcuteCO2 + " kg of CO2 emissions can be saved by using our biochar");
+	  $('searchValue').innerHTML = calcuteCO2 + " kg of CO2 emissions can be saved by using our biochar!";
 }
