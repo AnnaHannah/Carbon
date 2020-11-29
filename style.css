@@ -9,6 +9,12 @@ html
 	cursor: pointer;
 }
 
+#inputZone
+{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
 #calc {
 	background: royalblue;
 	border: 1px solid darkblue;
