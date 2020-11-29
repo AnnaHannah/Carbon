@@ -26,14 +26,14 @@ var inputNumber = new Number(inputTextValue);
 
 // This will wait until Jquery is loaded then fire your logic
 defer(function () {
-  $("div").html("");
+  $("div").html(" ");
   console.log(document);
 });
 
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-  $('#searchValue').text("");
+  $('#searchValue').text(" ");
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
 	  calculateAndDisplay();
