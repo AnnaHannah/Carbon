@@ -21,15 +21,15 @@ details
 }
 
 
-#searchValue
-{
+#searchValue{
 	margin: 20px;
 }
-#searchValueEuro
-{
+#searchValueEuro{
 	margin: 20px;
 }
-
+#searchValueEuroDiff{
+	margin: 20px;
+}
 
 #calculus
 {
