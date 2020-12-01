@@ -61,7 +61,10 @@ function calculateAndDisplay() {
 
   if (Number.isNaN(calculatedCO2) == false)
   {
-    $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
+    if(inputNumber!=0)
+    {
+      $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
+    }
   }
 
   /*
