@@ -44,22 +44,32 @@ defer(function () {
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-	$('#searchValue').text(" ");
+	$('#searchValue').text("");
+  calculateAndDisplay();
 
+  /*
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
   if (e.keyCode == 13) {
 	  calculateAndDisplay();
   }
+  */
 }
 
-function calculateAndDisplay() { 
+function calculateAndDisplay() {
   //CO2 formula
 	var calculatedCO2 = Math.round(inputNumber * 257.5556);
 
+  if (Number.isNaN(calculatedCO2) == false)
+  {
+    $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
+  }
+
+  /*
 	if (Number.isNaN(inputNumber) == true){
 		$('#searchValue').decode_utf8.text("Sorry, this number is not valid");
 		}
   else
     $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
 	  //$('#searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
+  */
 }
