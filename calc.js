@@ -19,6 +19,15 @@ function defer(method) {
   }
 }
 
+// utf8 support
+function encode_utf8(s) {
+  return unescape(encodeURIComponent(s));
+}
+
+function decode_utf8(s) {
+  return decodeURIComponent(escape(s));
+}
+
 //creates a listener for when you press a key
 window.onkeyup = keyup;
 
@@ -43,14 +52,14 @@ function keyup(e) {
   }
 }
 
-function calculateAndDisplay() {
+function calculateAndDisplay() { 
   //CO2 formula
 	var calculatedCO2 = Math.round(inputNumber * 257.5556);
 
 	if (Number.isNaN(inputNumber) == true){
-		$('#searchValue').text("Sorry, this number is not valid");
+		$('#searchValue').decode_utf8.text("Sorry, this number is not valid");
 		}
   else
-    $('#searchValue').text(calculatedCO2 + " kg of CO2 emissions can be saved by using our biochar!");
+    $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
 	  //$('#searchValue').innerHTML = calculatedCO2 + " kg of CO<small>2</small> &#w2082; emissions can be saved by using our biochar!";
 }
