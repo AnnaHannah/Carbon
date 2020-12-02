@@ -38,7 +38,7 @@ function calculateAndDisplay(inputNumber) {
   // the " at the end of searchValue, please let it there, that is the only way this works, even if this violenced js norms
   if (Number.isNaN(calculatedCO2) == false) {
     if (inputNumber > 0) {
-      $('#searchValue').text(calculatedCO2 + "  kg of CO2 emissions can be safed by using our concrete, thats about 36 %");
+      $('#searchValue').text(calculatedCO2 + "  kg of CO₂ emissions can be safed by using our concrete, thats about 36 %");
     }
   }
 }
@@ -49,17 +49,16 @@ function calculateAndDisplayPrice(inputNumber) {
   var calculatedCost = Math.round(inputNumber * 7466.85);
   if (Number.isNaN(calculatedCost) == false) {
     if (inputNumber > 0) {
-      $('#searchValueEuro').text(calculatedCost + " € the estimated cost for our concrete ");
+      $('#searchValueEuro').text(" • " + calculatedCost + " € the estimated cost for our concrete ");
     }
   }
 }
 function calculateAndDisplayPriceDiff(inputNumber) {
   //Euro Differenz formula
   var calculatedCostDiff = Math.round(inputNumber * 0.99666392119);
-  var x = calculatedCostDiff
-  if (Number.isNaN(x) == false) {
+  if (Number.isNaN(calculatedCostDiff) == false) {
     if (inputNumber > 0) {
-      $('#searchValueEuroDiff').text(x + " € is the cost difference to conventional products its about 1 % ");
+      $('#searchValueEuroDiff').text("• " + calculatedCostDiff + " € is the cost difference to conventional products its about 1 % ");
     }
   }
 }
