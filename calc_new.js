@@ -1,4 +1,4 @@
-// This will check if jQuery has loaded. If not, it will add to <head>
+﻿// This will check if jQuery has loaded. If not, it will add to <head>
 window.onload = function () {
   if (!window.jQuery) {
     var head = document.getElementsByTagName('head')[0];
