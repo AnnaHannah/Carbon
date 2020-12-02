@@ -18,18 +18,18 @@
 <body>
 	<h1>Carbon footprint visualization tool</h1>
 
-			<p>Calculate how much CO<small>2</small> you will save by using our biochar</p>
+			<p>Calculate how much CO<small>2</small> you will save by using our biochar for your concrete  </p>
 			<!-- Iframe has securtity issues - Malware usage
 				<iframe src="./calc.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
 					style="height:100%; width:100%; border:none;">
 				</iframe>
 			-->
 
-			<input id="searchTxt" autocomplete="off" placeholder="m³ of concrete"> m³ 
+			<input id="searchTxt" autocomplete="off" placeholder="100"> m³ of concrete
       <div id="searchValue"></div>
       <div id="searchValueEuro"></div>
-      <div id="searchValueEuroDiff"></div> 
- 
+      <div id="searchValueEuroDiff"></div>
+
 
 <details>
   <summary>Physical properties</summary>
@@ -48,10 +48,14 @@
 </details>
 
 <details>
-  <summary>Small example </summary>
+  <summary>Examples </summary>
   <ul>
-        <li>Basement (7m² | 0,7m³): 180kg CO<small>2</small>!</li>
-        <li>In general you can also combine our product with other environmentally friendly materials in your building project</li>
+    <li>Basement (7m² | 1m³) → <span style="color: #23A455;">260 kg of spared CO<small>2*</small></span></li>
+    <li>Small Flat (30m² | 26m³) → <span style="color: #23A455;">7 000 kg of spared CO<small>2*</small></span></li>
+    <li>Average House (140m² | 66m³) → <span style="color: #23A455;">17 000 kg of spared CO<small>2*</small></span></li>
+  </ul>
+  <ul>
+    <li style="list-style-type: none; color: #676767; font-size:10pt;">*Results are rounded for clarity purposes</li>
   </ul>
 </details>
 
