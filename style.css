@@ -43,20 +43,26 @@ summary:focus
 }
 
 #searchValue{
-	margin: 20px;
-	font-size: 13pt;
+	margin-top: 20px;
+	font-size: 14pt;
 	color:#23A455;
 }
-#searchValueEuro{
+
+#searchValueTrees{
 	margin-top: 20px;
-	font-size: 13pt;
+	margin-bottom: 20px;
+	font-size: 12pt;
 	color:#23A455;
+}
+
+#searchValueEuro{
+	font-size: 12pt;
+	color:black;
 }
 #searchValueEuroDiff
 {
-	margin-top: 20px;
-	font-size: 13pt;
-	color:#23A455;
+	font-size: 12pt;
+	color:black;
 }
 input
 {

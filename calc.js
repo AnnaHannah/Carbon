@@ -44,7 +44,7 @@ defer(function () {
 function keyup(e) {
   //setting your input text to the global Javascript Variable for every key press
 	inputNumber = e.target.value;
-	$('#searchValue').text("");
+
   calculateAndDisplay();
 
   /*
@@ -64,6 +64,10 @@ function calculateAndDisplay() {
     if(inputNumber!=0)
     {
       $('#searchValue').text(calculatedCO2 + " kg of CO₂ emissions can be saved by using our biochar!");
+    }
+    else
+    {
+    	$('#searchValue').text("");
     }
   }
 

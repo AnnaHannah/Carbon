@@ -25,11 +25,12 @@
 				</iframe>
 			-->
 
-			<input id="searchTxt" autocomplete="off" placeholder="100"> m³ of concrete
+			<input id="searchTxt" autocomplete="off" placeholder="0"> m³ of concrete
       <div id="searchValue"></div>
-      
+      <div id="searchValueTrees"></div>
 
-<!-- not enough data yet 
+
+<!-- not enough data yet
 <details>
   <summary>Physical properties</summary>
   <ul>
@@ -41,22 +42,37 @@
 
 <details>
   <summary>Pricing</summary>
-  <!-- <p> Based on the specified amount of concrete, our non-binding price is: </p>-->
-    <div id="searchValueEuro"></div>
-    <div id="searchValueEuroDiff"></div>
+    <ul>
+      <li id="searchValueEuro"></li>
+      <li id="searchValueEuroDiff"></li>
+    </ul>
+    <ul>
+      <li style="list-style-type: none; color: #676767; font-size:10pt;">*Based on average calculations.</li>
+    </ul>
 </details>
 
 <details>
   <summary>Examples </summary>
   <ul>
-    <li>Basement (7m² | 1m³) → <span style="color: #23A455;">260 kg of spared CO<small>2*</small></span></li>
-    <li>Small Flat (30m² | 26m³) → <span style="color: #23A455;">7 000 kg of spared CO<small>2*</small></span></li>
-    <li>Average House (140m² | 66m³) → <span style="color: #23A455;">17 000 kg of spared CO<small>2*</small></span></li>
+    <li>Basement (7m² | 1m³) → <span style="color: #23A455;">260 kg of spared CO<small>2</small></span>*</li>
+    <li>Small Flat (30m² | 26m³) → <span style="color: #23A455;">7 000 kg of spared CO<small>2</small></span>*</li>
+    <li>Average House (140m² | 66m³) → <span style="color: #23A455;">17 000 kg of spared CO<small>2</small></span>*</li>
   </ul>
   <ul>
     <li style="list-style-type: none; color: #676767; font-size:10pt;">*Results are rounded for clarity purposes</li>
   </ul>
 </details>
+
+<details>
+  <summary>Properties</summary>
+  	<ul>
+        <li>Concrete grade: M20</li>
+        <li>Mechanical strength: 40 MPa </li>
+        <li>Design strength: 0.45fck</li>
+        <li>Tensile strength: 0.7 fckN/mm²</li>
+    </ul>
+</details>
+
 
 </body>
 </html>
